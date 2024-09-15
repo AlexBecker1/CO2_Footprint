@@ -1,0 +1,36 @@
+/*Abfrage der Sprache um den Bereich mit class=rtl auf Leserichtung Rechts->Links umzustellen*/
+:lang("he") .rtl,
+:lang("ar") .rtl,
+:lang("fa") .rtl,
+:lang("ur") .rtl {
+    direction: rtl;
+}
+@media only screen and (max-width: 767.98px) {
+    .img-circle {
+        width: 50px; /*Größenanpassung Logo*/
+    }
+    .tabsm th, 
+    .tabsm td {
+        padding: 3px; /*Größenanpassung Tabellen-Zellen, da es als Bootstrapklasse nur global anwendbar wäre*/
+    }
+}
+@media only screen and (min-width: 768px) {
+    .img-circle {
+        width: 100px; /*Größenanpassung Logo*/
+    }
+}
+.bconfig {
+    max-width: 1000px;                          /*maximalen Breite des Inhaltes*/
+    margin: 0 auto;                             /*zentrierte Darstellung*/
+    overflow-x: hidden;                         /*verhindern von vertikalem Scrollen*/
+    background-color: rgb(242, 247, 247);     /*Hintergrundfarbe Hauptfenster*/
+}
+/*Abstand um die Tabelle*/
+.tabconfig{
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+main {
+    background-color: rgb(201, 228, 253); /*Hintergrundfarbe Main-Bereich*/
+}
